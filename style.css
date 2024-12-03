@@ -19,61 +19,61 @@ body {
 
 #container {
   width: 70%;
-  min-height: 320px;
-  max-width: 800px;
-  max-height: 700px;
+  min-height: 20rem;
+  max-width: 25rem;
+  max-height: 44rem;
   display: flex; /* Możesz dodać flexbox, jeśli chcesz lepiej kontrolować pozycjonowanie zawartości */
   flex-direction: column; /* Jeśli chcesz, aby elementy w #container były ułożone jeden pod drugim */
   background-color: var(--White);
-  border-radius: 20px;
+  border-radius: 1.2rem;
 }
 #belowpicture {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  padding-bottom: 2.5rem;
 }
 
 #picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .imgstyle {
   width: 100%; /* Skalowanie obrazka do pełnej szerokości kontenera */
   height: 50%; /* Zachowanie proporcji obrazka */
 
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
 }
 
 #perfume {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.2rem;
   color: var(--Darkgrayishblue);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 #name {
   font-family: "Fraunces";
   font-weight: 700;
-  font-size: 30px;
-  margin-top: 8px;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
   line-height: 1;
 }
 .discription {
-  margin-top: 15px;
+  margin-top: 1rem;
   color: var(--Darkgrayishblue);
-  font-size: 13.5px;
+  font-size: 0.8rem;
   line-height: 1.5;
   position: relative;
 }
 #currentprice {
   font-family: "Fraunces";
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.8rem;
   color: var(--Darkcyan);
 }
 #addtocard {
@@ -84,10 +84,10 @@ body {
   padding-inline-end: 5rem;
   padding-block-start: 1rem;
   padding-block-end: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--White);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.9rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -97,8 +97,8 @@ body {
   height: 1rem;
   width: 1rem;
   position: relative;
-  top: 2px;
-  left: -8px;
+  top: 0.1rem;
+  left: -0.5rem;
 }
 
 #addtocard:hover {
@@ -107,9 +107,14 @@ body {
 }
 
 @media (min-width: 55rem) {
+  .product-image {
+    content: url(images/image-product-desktop.jpg);
+  }
+
   #container {
     flex-direction: row; /* Układ w dwóch kolumnach */
-    height: 35%;
+    height: 45%;
+    max-width: 45rem;
   }
   #picture {
     width: 50%;
@@ -121,12 +126,13 @@ body {
     width: 100%; /* Pierwsza kolumna - zdjęcie */
     height: 100%;
     object-fit: cover;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 1rem;
     border-top-right-radius: 0px;
   }
 
   #belowpicture {
     width: 50%; /* Druga kolumna - tekst */
+
     padding: 1rem;
     display: flex;
     flex-direction: column;
