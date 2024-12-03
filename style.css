@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-color: var(--Cream);
+  width: 100%; /* Zmieniamy na 100% szerokości ekranu */
+  height: 100vh; /* Ustawiamy wysokość na 100% wysokości ekranu */
+  display: flex; /* Używamy flexboxa */
+  justify-content: center; /* Centrujemy w poziomie */
+  align-items: center; /* Centrujemy w pionie */
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+#container {
+  width: 20rem;
+  height: 36rem;
+  display: flex; /* Możesz dodać flexbox, jeśli chcesz lepiej kontrolować pozycjonowanie zawartości */
+  flex-direction: column; /* Jeśli chcesz, aby elementy w #container były ułożone jeden pod drugim */
+  background-color: var(--White);
+  border-radius: 20px;
+}
+
+#picture {
+  width: 20rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.imgstyle {
+  width: 20rem; /* Skalowanie obrazka do pełnej szerokości kontenera */
+  height: 15rem; /* Zachowanie proporcji obrazka */
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#belowpicture {
+  /* margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; */
+  margin: 20px;
+}
+
+#perfume {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--Darkgrayishblue);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#name {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 8px;
+  line-height: 1;
+}
+.discription {
+  margin-top: 15px;
+  color: var(--Darkgrayishblue);
+  font-size: 13.5px;
+  line-height: 1.5;
+  position: relative;
+}
+#currentprice {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--Darkcyan);
+}
+#addtocard {
+  background-color: var(--Darkcyan);
+  position: relative;
+  top: 10px;
+  padding-inline-start: 85px;
+  padding-inline-end: 85px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  border-radius: 8px;
+  color: var(--White);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.ikonka {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  top: 2px;
+  left: -8px;
+}
+
+#addtocard:hover {
+  background-color: var(--Verydarkblue);
+  cursor: pointer;
+}
